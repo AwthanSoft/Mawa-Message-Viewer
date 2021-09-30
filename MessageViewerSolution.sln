@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mawa.MessageViewer", "Mawa.MessageViewer\Mawa.MessageViewer.csproj", "{F7B10850-38F4-45D2-83B9-75CB11D3FAD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7B10850-38F4-45D2-83B9-75CB11D3FAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B10850-38F4-45D2-83B9-75CB11D3FAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B10850-38F4-45D2-83B9-75CB11D3FAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B10850-38F4-45D2-83B9-75CB11D3FAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DCE111F-EA2E-43A9-B391-9E2C21703E0B}
+	EndGlobalSection
+EndGlobal

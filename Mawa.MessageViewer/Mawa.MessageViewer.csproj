@@ -4,4 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\LockProject\00\LockSolution\Mawa.Lock\Mawa.Lock.csproj" />
+  </ItemGroup>
+
 </Project>

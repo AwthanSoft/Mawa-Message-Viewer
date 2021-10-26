@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Mawa.MessageViewer
 {
@@ -46,6 +47,7 @@ namespace Mawa.MessageViewer
             close_lock();
         }
         protected abstract void _Show_GeneralMessage_Text(string title, string message);
+
         public void Show_GeneralMessage_Text(string title, string message, MessageBoxImage icon)
         {
             open_lock();
@@ -70,6 +72,44 @@ namespace Mawa.MessageViewer
             return resultt;
         }
         protected abstract bool _Question_GeneralMessage_Text(string title, string message, MessageBoxImage icon);
+        #endregion
+
+        #region Shower Async
+        //public virtual async void Show_GeneralMessage_TextAsync(string title, string message)
+        //{
+        //    open_lock();
+        //    await _Show_GeneralMessage_TextAsync(title, message);
+        //    close_lock();
+        //}
+        //protected virtual async void _Show_GeneralMessage_TextAsync(string title, string message)
+        //{
+        //    await Task.Run(() => _Show_GeneralMessage_Text(title, message));
+        //}
+
+        //public void Show_GeneralMessage_Text(string title, string message, MessageBoxImage icon)
+        //{
+        //    open_lock();
+        //    _Show_GeneralMessage_Text(title, message, icon);
+        //    close_lock();
+        //}
+        //protected abstract void _Show_GeneralMessage_Text(string title, string message, MessageBoxImage icon);
+
+        //public bool Question_GeneralMessage_Text(string title, string message)
+        //{
+        //    open_lock();
+        //    var resultt = _Question_GeneralMessage_Text(title, message);
+        //    close_lock();
+        //    return resultt;
+        //}
+        //protected abstract bool _Question_GeneralMessage_Text(string title, string message);
+        //public bool Question_GeneralMessage_Text(string title, string message, MessageBoxImage icon)
+        //{
+        //    open_lock();
+        //    var resultt = _Question_GeneralMessage_Text(title, message, icon);
+        //    close_lock();
+        //    return resultt;
+        //}
+        //protected abstract bool _Question_GeneralMessage_Text(string title, string message, MessageBoxImage icon);
         #endregion
 
         #region Dispose

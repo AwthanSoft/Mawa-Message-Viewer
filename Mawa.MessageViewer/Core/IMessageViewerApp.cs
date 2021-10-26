@@ -11,7 +11,8 @@ namespace Mawa.MessageViewer
         void Show_GeneralMessage_Text(string title, string message, MessageBoxImage icon);
         bool Question_GeneralMessage_Text(string title, string message);
         bool Question_GeneralMessage_Text(string title, string message, MessageBoxImage icon);
+
     }
 
-    
+
 }

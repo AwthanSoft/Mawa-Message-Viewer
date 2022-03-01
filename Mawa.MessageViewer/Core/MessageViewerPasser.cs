@@ -1,19 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Mawa.MessageViewer.Services;
+using System;
 
 namespace Mawa.MessageViewer
 {
     public static class MessageViewerPasser //: IMessageShowerApp
     {
-        private static MessageViewerAppControlCore _instance;
-        internal static MessageViewerAppControlCore instance
+
+        //private static MessageViewerAppControlCore _instance;
+        //internal static MessageViewerAppControlCore instance
+        //{
+        //     set
+        //    {
+        //        if (_instance == null)
+        //            _instance = value;
+        //        else
+        //            throw new Exception();
+        //    }
+        //    //get => _instance;
+        //    // as temp for test .?
+        //    get
+        //    {
+        //        if (_instance == null)
+        //            throw new NullReferenceException();
+        //        return _instance;
+        //    }
+        //}
+
+
+        private static IMessageViewerService _instanceService;
+        internal static IMessageViewerService instanceService
         {
-             set
+            set
             {
-                if (_instance == null)
-                    _instance = value;
+                if (_instanceService == null)
+                    _instanceService = value;
                 else
                     throw new Exception();
             }
@@ -21,29 +41,31 @@ namespace Mawa.MessageViewer
             // as temp for test .?
             get
             {
-                if (_instance == null)
-                    throw new Exception();
-                return _instance;
+                if (_instanceService == null)
+                    throw new NullReferenceException();
+                return _instanceService;
             }
         }
 
+
+
         public static void Show_GeneralMessage_Text(string title, string message)
         {
-            instance?.Show_GeneralMessage_Text(title, message);
+            instanceService?.Show_GeneralMessage_Text(title, message);
         }
 
         public static void Show_GeneralMessage_Text(string title, string message, MessageBoxImage icon)
         {
-            instance?.Show_GeneralMessage_Text(title, message, icon);
+            instanceService?.Show_GeneralMessage_Text(title, message, icon);
         }
 
         public static bool Question_GeneralMessage_Text(string title, string message)
         {
-            return instance.Question_GeneralMessage_Text(title, message);
+            return instanceService.Question_GeneralMessage_Text(title, message);
         }
         public static bool Question_GeneralMessage_Text(string title, string message, MessageBoxImage icon)
         {
-            return instance.Question_GeneralMessage_Text(title, message, icon);
+            return instanceService.Question_GeneralMessage_Text(title, message, icon);
         }
 
     }

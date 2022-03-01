@@ -15,7 +15,7 @@ namespace Mawa.MessageViewer
         {
             pre_refresh();
 
-            MessageViewerPasser.instance = this;
+            //MessageViewerPasser.instanceService = this;
         }
         private void pre_refresh()
         {

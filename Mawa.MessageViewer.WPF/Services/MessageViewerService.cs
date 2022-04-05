@@ -2,6 +2,7 @@
 using Mawa.TypeEnumCtrls;
 using System;
 using System.Threading.Tasks;
+using System.Windows.Media.Animation;
 
 namespace Mawa.MessageViewer.WPF.Services
 {
@@ -69,14 +70,25 @@ namespace Mawa.MessageViewer.WPF.Services
             return resultt;
         }
 
+        #region For Async
+        //https://www.dmcinfo.com/latest-thinking/blog/id/163/asynchronous-message-box-in-wpf
+        // Method invoked on a separate thread that shows the message box.
+        //private delegate void ShowMessageBoxDelegate(string title, string message, MessageBoxImage icon);
+        //private delegate void ShowGeneralMessageText_Delegate(string title, string message);
+
+        #endregion
+
         protected override Task<bool> _Question_GeneralMessage_TextAsync(string title, string message)
         {
-            throw new NotImplementedException();
+
+            var resultt = _Question_GeneralMessage_Text(title, message);
+            return Task.Run(() => resultt);
         }
 
         protected override Task<bool> _Question_GeneralMessage_TextAsync(string title, string message, MessageBoxImage icon)
         {
-            throw new NotImplementedException();
+            var resultt = _Question_GeneralMessage_Text(title, message, icon);
+            return Task.Run(() => resultt);
         }
 
         protected override void _Show_GeneralMessage_Text(string title, string message)
@@ -91,12 +103,16 @@ namespace Mawa.MessageViewer.WPF.Services
 
         protected override Task _Show_GeneralMessage_TextAsync(string title, string message)
         {
-            throw new NotImplementedException();
+            //var caller = new ShowGeneralMessageText_Delegate(_Show_GeneralMessage_Text);
+            //caller.BeginInvoke(title, message, null, null);
+            _Show_GeneralMessage_Text(title, message);
+            return Task.Delay(10);
         }
 
         protected override Task _Show_GeneralMessage_TextAsync(string title, string message, MessageBoxImage icon)
         {
-            throw new NotImplementedException();
+            _Show_GeneralMessage_Text(title, message, icon);
+            return Task.Delay(10);
         }
 
 

@@ -12,4 +12,22 @@
     <ProjectReference Include="..\..\..\..\LockProject\00\LockSolution\Mawa.Lock\Mawa.Lock.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resx\MessageShowerAppResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MessageShowerAppResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resx\MessageShowerAppResource.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\MessageShowerAppResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageShowerAppResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

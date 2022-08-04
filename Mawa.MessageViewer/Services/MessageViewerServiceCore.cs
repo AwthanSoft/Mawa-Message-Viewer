@@ -12,7 +12,7 @@ namespace Mawa.MessageViewer.Services
         public MessageViewerServiceCore()
         {
             objectLock = new ObjectLock();
-            MessageViewerPasser.instanceService = this;
+            MessageViewerPasser.InstanceService = this;
         }
 
         #endregion

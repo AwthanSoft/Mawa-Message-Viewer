@@ -2,7 +2,6 @@
 using Mawa.TypeEnumCtrls;
 using System;
 using System.Threading.Tasks;
-using System.Windows.Media.Animation;
 
 namespace Mawa.MessageViewer.WPF.Services
 {

@@ -10,10 +10,10 @@ using System.Windows;
 [assembly: AssemblyTitle("Mawa.MessageViewer.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Mawa.MessageViewer.WPF")]
-[assembly: AssemblyCopyright("Copyright ©  2022")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("AwthanSoft")]
+[assembly: AssemblyProduct("Mawa MessageViewer WPF")]
+[assembly: AssemblyCopyright("© 2021-2022 AwthanSoft")]
+[assembly: AssemblyTrademark("Awthan")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("22.9.7.1")]
+[assembly: AssemblyFileVersion("22.9.7.1")]

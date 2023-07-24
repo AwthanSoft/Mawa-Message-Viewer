@@ -1,24 +1,23 @@
-﻿using Mawa.MessageViewer.Services;
+﻿using Mawa.DependencyInjection.Controls;
+using Mawa.MessageViewer.Services;
 using Mawa.MessageViewer.WPF.Services;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace Mawa.MessageViewer.WPF
 {
     public static class AppStarter
     {
         #region Hosting
-        public static void InitApp(IHostBuilder host)
-        {
-            host.ConfigureServices((services) =>
-            {
-                ConfigureServices(services);
-            });
-        }
+        //public static void InitApp(IHostBuilder host)
+        //{
+        //    host.ConfigureServices((services) =>
+        //    {
+        //        ConfigureServices(services);
+        //    });
+        //}
 
-        public static void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices(ICollectionServicesControl CollectionServicesCtrl)
         {
-            services.AddSingleton<IMessageViewerService, MessageViewerService>();
+            CollectionServicesCtrl.AddSingleton<IMessageViewerService, MessageViewerService>();
         }
 
         #endregion

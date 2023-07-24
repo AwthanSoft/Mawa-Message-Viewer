@@ -76,9 +76,6 @@
     <Reference Include="Microsoft.Extensions.FileSystemGlobbing, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>D:\00proj\LedgerApp\d net\MDMProject\packages\Microsoft.Extensions.FileSystemGlobbing.6.0.0\lib\net461\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Hosting, Version=6.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>D:\00proj\LedgerApp\d net\MDMProject\packages\Microsoft.Extensions.Hosting.6.0.1\lib\net461\Microsoft.Extensions.Hosting.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Extensions.Hosting.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>D:\00proj\LedgerApp\d net\MDMProject\packages\Microsoft.Extensions.Hosting.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Hosting.Abstractions.dll</HintPath>
     </Reference>
@@ -201,6 +198,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\..\..\00proj\MawaLibs\MawaDependencyInjectionSolution\Mawa.DependencyInjection\Mawa.DependencyInjection.csproj">
+      <Project>{6690fdf5-db93-4e3d-90a5-986e71c475e0}</Project>
+      <Name>Mawa.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\MawaLibsMainProject\00\MawaLibsMainSolution\Mawa\Mawa.csproj">
       <Project>{b2060338-c6e4-4577-81bc-1a0acde0466b}</Project>
       <Name>Mawa</Name>

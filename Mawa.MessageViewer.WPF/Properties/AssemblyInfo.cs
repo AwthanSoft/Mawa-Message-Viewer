@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("AwthanSoft")]
 [assembly: AssemblyProduct("Mawa MessageViewer WPF")]
-[assembly: AssemblyCopyright("© 2021-2022 AwthanSoft")]
+[assembly: AssemblyCopyright("© 2021-2023 AwthanSoft")]
 [assembly: AssemblyTrademark("Awthan")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("22.9.7.1")]
-[assembly: AssemblyFileVersion("22.9.7.1")]
+[assembly: AssemblyVersion("23.07.25.0")]
+[assembly: AssemblyFileVersion("23.07.25.0")]

@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Copyright>© 2021-2022 AwthanSoft</Copyright>
+    <Copyright>© 2021-2023 AwthanSoft</Copyright>
     <RepositoryUrl>https://github.com/AwthanSoft/Mawa-Message-Viewer</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
-    <Version>22.9.7</Version>
+    <Version>23.07.25</Version>
     <Authors>AwthanSoft</Authors>
     <Product>Mawa Message Viewer</Product>
-    <AssemblyVersion>22.9.7.1</AssemblyVersion>
-    <FileVersion>22.9.7.1</FileVersion>
+    <AssemblyVersion>23.07.25.0</AssemblyVersion>
+    <FileVersion>23.07.25.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -120,7 +120,13 @@
   <data name="BtnC_Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="BtnC_No" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="BtnC_Ok" xml:space="preserve">
     <value>Ok</value>
+  </data>
+  <data name="BtnC_Yes" xml:space="preserve">
+    <value>Yes</value>
   </data>
 </root>

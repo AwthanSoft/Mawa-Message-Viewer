@@ -70,11 +70,29 @@ namespace Mawa.MessageViewer.Resx {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string BtnC_No {
+            get {
+                return ResourceManager.GetString("BtnC_No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ok.
         /// </summary>
         public static string BtnC_Ok {
             get {
                 return ResourceManager.GetString("BtnC_Ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string BtnC_Yes {
+            get {
+                return ResourceManager.GetString("BtnC_Yes", resourceCulture);
             }
         }
     }
